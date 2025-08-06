@@ -2,9 +2,9 @@ name: Playwright Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, develop ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, develop ]
 
 jobs:
   test:
@@ -28,9 +28,9 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
 
-    - name: Upload test report (optional)
+    - name: Upload test report
       if: always()
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: playwright-report
         path: playwright-report/
