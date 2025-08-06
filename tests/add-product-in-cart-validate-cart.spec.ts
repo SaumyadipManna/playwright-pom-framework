@@ -1,4 +1,4 @@
-import test from "@ngp-lib/BaseTest";
+import test from '../lib/BaseTest';
 import { CartPanel } from "@ngp-lib/panels/CartPanel";
 import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
 

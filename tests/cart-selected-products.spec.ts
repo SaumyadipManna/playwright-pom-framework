@@ -1,4 +1,4 @@
-import test from "@ngp-lib/BaseTest";
+import test from '../lib/BaseTest';
 import { CartPanel } from "@ngp-lib/panels/CartPanel";
 import { CheckOutPanel } from "@ngp-lib/panels/CheckOutPanel";
 import { OverviewPanel } from "@ngp-lib/panels/OverviewPanel";
