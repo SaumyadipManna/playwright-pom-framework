@@ -26,7 +26,8 @@ jobs:
         run: npx playwright install --with-deps
       
       - name: Run Playwright tests
-        run: tsconfig-paths-register && npx playwright test
+        run: ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
+
       
     
       - name: Upload Playwright report
