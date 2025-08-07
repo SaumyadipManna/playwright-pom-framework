@@ -30,7 +30,8 @@ jobs:
 
       
       - name: Run Playwright tests
-        run: ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
+        # run: ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
+        run: npx ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
 
       
     
