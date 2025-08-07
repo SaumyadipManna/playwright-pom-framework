@@ -28,8 +28,8 @@ jobs:
       - name: Compile TypeScript
         run: npx tsc
 
-      - name: Run Playwright tests from compiled JS
-        run: npx playwright test dist/tests
+      - name: Run Playwright tests with tsconfig-paths
+        run: npx ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
 
       - name: Upload Playwright report
         if: always()
