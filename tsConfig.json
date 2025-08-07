@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
     "baseUrl": ".",
     "paths": {
       "@ngp-lib/*": ["lib/*"],
@@ -7,19 +9,16 @@
       "@pages/*": ["lib/pages/*"],
       "@panels/*": ["lib/panels/*"],
       "@playwrightconfig": ["playwright.config"],
-      "@sdconfig": ["saucedemo.config"]
+      "@sdconfig": ["saucedemo.config"],
+      "@report/*": ["playwright-report/*"]
     },
-    "module": "CommonJS",
-    "target": "ESNext",
     "moduleResolution": "node",
-    // "outDir": "dist",
-    "rootDir": ".",
     "esModuleInterop": true,
-    "strict": true,
     "skipLibCheck": true
   },
   "include": ["lib", "tests", "playwright.config.ts"]
 }
+
 
 
 
@@ -34,8 +33,8 @@
 //       "@pages/*": ["lib/pages/*"],
 //       "@panels/*": ["lib/panels/*"],
 //       "@playwrightconfig": ["playwright.config"],
-//       "@sdconfig": ["saucedemo.config"]
-//       // "@report/*": ["playwright-report/*"]
+//       "@sdconfig": ["saucedemo.config"],
+//       "@report/*": ["playwright-report/*"]
 //     },
 
 //     /* Language and Environment */
