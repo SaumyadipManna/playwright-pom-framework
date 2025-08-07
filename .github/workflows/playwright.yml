@@ -26,8 +26,9 @@ jobs:
         run: npx playwright install --with-deps
       
       - name: Run Playwright tests
+        working-directory: ./playwright-pom-framework
         run: npx ts-node -r tsconfig-paths/register --project tsconfig.json node_modules/.bin/playwright test
-
+    
       - name: Upload Playwright report
         if: always()
         uses: actions/upload-artifact@v4
