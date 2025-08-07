@@ -24,6 +24,10 @@ jobs:
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
+
+      - name: Install dev dependencies for TypeScript alias support
+        run: npm install --save-dev ts-node tsconfig-paths
+
       
       - name: Run Playwright tests
         run: ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
