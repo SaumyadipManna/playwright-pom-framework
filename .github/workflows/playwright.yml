@@ -25,8 +25,8 @@ jobs:
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
       
-      - name: Run Playwright tests with tsconfig-paths
-        run: npx ts-node -r tsconfig-paths/register --project tsconfig.json node_modules/.bin/playwright test
+      - name: Run Playwright tests
+        run: tsconfig-paths-register && npx playwright test
       
     
       - name: Upload Playwright report
