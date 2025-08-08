@@ -1,8 +1,12 @@
 import test from '../lib/BaseTest';
-import { CartPanel } from "@ngp-lib/panels/CartPanel";
-import { CheckOutPanel } from "@ngp-lib/panels/CheckOutPanel";
-import { OverviewPanel } from "@ngp-lib/panels/OverviewPanel";
-import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
+import { CartPanel } from '../lib/panels/CartPanel';
+import { CheckOutPanel } from '../lib/panels/CheckOutPanel';
+import { OverviewPanel } from '../lib/panels/OverviewPanel';
+import { excelUtil } from '../lib/utils/inatializeSauceDemo';
+// import { CartPanel } from "@ngp-lib/panels/CartPanel";
+// import { CheckOutPanel } from "@ngp-lib/panels/CheckOutPanel";
+// import { OverviewPanel } from "@ngp-lib/panels/OverviewPanel";
+// import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
 
 test("Cart selected product", async ({ inventoryPage }) => {
     let products = ["Sauce Labs Backpack", "Sauce Labs Bike Light"];

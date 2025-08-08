@@ -1,5 +1,6 @@
 import { Page } from "@playwright/test";
-import { DEFAULT_USERNAME,DEFAULT_PASSWORD } from "@sdconfig";
+import { DEFAULT_PASSWORD, DEFAULT_USERNAME } from "../../saucedemo.config";
+// import { DEFAULT_USERNAME,DEFAULT_PASSWORD } from "@sdconfig";
 
 
 interface LoginInfo{

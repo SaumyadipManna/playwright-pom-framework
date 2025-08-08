@@ -1,6 +1,8 @@
 import test from '../lib/BaseTest';
-import { CartPanel } from "@ngp-lib/panels/CartPanel";
-import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
+import { CartPanel } from '../lib/panels/CartPanel';
+import { excelUtil } from '../lib/utils/inatializeSauceDemo';
+// import { CartPanel } from "@ngp-lib/panels/CartPanel";
+// import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
 
 test('Add product in cart and validate Cart count', async ({ inventoryPage }) => {
     let products=["Sauce Labs Backpack","Sauce Labs Bike Light"];

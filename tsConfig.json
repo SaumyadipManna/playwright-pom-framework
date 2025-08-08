@@ -9,7 +9,7 @@
       "@pages/*": ["lib/pages/*"],
       "@panels/*": ["lib/panels/*"],
       "@playwrightconfig": ["playwright.config"],
-      "@sdconfig": ["config/saucedemo.config"],
+      "@sdconfig": ["saucedemo.config"],
       "@report/*": ["playwright-report/*"]
     },
     "moduleResolution": "node",

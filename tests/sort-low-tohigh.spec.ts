@@ -1,7 +1,9 @@
 import test from '../lib/BaseTest';
-import { InventoryPage } from "@ngp-lib/pages/InventoryPage";
-import { CartPanel } from "@ngp-lib/panels/CartPanel";
-import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
+import { InventoryPage } from '../lib/pages/InventoryPage';
+import { excelUtil } from '../lib/utils/inatializeSauceDemo';
+// import { InventoryPage } from "@ngp-lib/pages/InventoryPage";
+// import { CartPanel } from "@ngp-lib/panels/CartPanel";
+// import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
 
 test('Sort product Low to High', async ({ inventoryPage }) => {
     (await(await inventoryPage.sortLowTOHigh() as InventoryPage)

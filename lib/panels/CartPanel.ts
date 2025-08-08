@@ -1,6 +1,7 @@
 import { expect, Page } from "@playwright/test";
-import { InventoryPage } from "@ngp-lib/pages/InventoryPage";
+// import { InventoryPage } from "@ngp-lib/pages/InventoryPage";
 import { CheckOutPanel } from "./CheckOutPanel";
+import { InventoryPage } from "../pages/InventoryPage";
 
 interface cartInfo{
     cartProducts:String[],

@@ -1,10 +1,13 @@
 import {test as baseTest} from "@playwright/test";
-import { LOGIN_URL } from "@sdconfig";
-import { LoginPage } from "@pages/LoginPage";
-import { InventoryPage } from "@pages/InventoryPage"
+// import { LOGIN_URL } from "@sdconfig";
+// import { LoginPage } from "@pages/LoginPage";
+// import { InventoryPage } from "@pages/InventoryPage"
 // import { LogoutPage } from '@pages/LogoutPage';
 import { _baseTest } from "@playwright/test";
 import { inatializeSauceDemo } from "./utils/inatializeSauceDemo";
+import { LoginPage } from "./pages/LoginPage";
+import { InventoryPage } from "./pages/InventoryPage";
+import { LOGIN_URL } from "../saucedemo.config";
 
 
 const test = baseTest.extend<{

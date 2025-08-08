@@ -1,5 +1,6 @@
 import { expect, Page } from "@playwright/test";
-import { CartPanel } from "@ngp-lib/panels/CartPanel";
+import { CartPanel } from "../panels/CartPanel";
+// import { CartPanel } from "@ngp-lib/panels/CartPanel";
 
 interface inventoryInfo {
     productName: string[]
