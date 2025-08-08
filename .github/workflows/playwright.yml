@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          path: my-project
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -23,7 +21,8 @@ jobs:
           node-version: '20'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+        working-directory: my-project
 
       - name: Rename jsconfig.json to tsconfig.json
         run: |
@@ -33,9 +32,11 @@ jobs:
 
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+        working-directory: my-project
 
       - name: Install ts-node and tsconfig-paths
         run: npm install --save-dev ts-node tsconfig-paths
+        working-directory: my-project
 
       - name: Run Playwright tests with path alias support
         run: npx ts-node -r tsconfig-paths/register node_modules/.bin/playwright test
