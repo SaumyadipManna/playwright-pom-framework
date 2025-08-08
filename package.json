@@ -11,15 +11,6 @@
     "@playwright/test": "^1.52.0",
     "@types/node": "^22.15.21"
   },
-  "_moduleAliases": {
-    "@ngp-lib/*": ["lib/*"],
-      "@ngp-data/*": ["lib/data/*"],
-      "@pages/*": ["lib/pages/*"],
-      "@panels/*": ["lib/panels/*"],
-      "@playwrightconfig": ["playwright.config"],
-      "@sdconfig": ["saucedemo.config"],
-      "@report/*": ["playwright-report/*"]
-  },
   "dependencies": {
     "typescript": "^5.8.3",
     "xlsx": "^0.18.5"
