@@ -8,8 +8,8 @@
       "@ngp-data/*": ["lib/data/*"],
       "@pages/*": ["lib/pages/*"],
       "@panels/*": ["lib/panels/*"],
-      "@playwrightconfig": ["playwright.config"],
-      "@sdconfig": ["saucedemo.config"],
+      "@playwrightconfig": ["playwright.config.ts"],
+      "@sdconfig": ["saucedemo.config.ts"],
       "@report/*": ["playwright-report/*"]
     },
     "moduleResolution": "node",
