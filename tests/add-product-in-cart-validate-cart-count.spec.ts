@@ -5,7 +5,7 @@ import { excelUtil } from "@ngp-lib/utils/inatializeSauceDemo";
 test('Add product in cart and validate Cart count', async ({ inventoryPage }) => {
     let products=["Sauce Labs Backpack","Sauce Labs Bike Light"];
     (await(await(await inventoryPage.addToCart({productName:products}) as CartPanel)
-    .cartManagement({ cartProducts:products, nextStep:'cartPanel'}) as CartPanel)
+    .cartManagement({ cartProducts:products, nextStep:'_cartPanel'}) as CartPanel)
     .validateProductCount({cartProducts:products}));
 });
 
